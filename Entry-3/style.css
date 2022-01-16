@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.container__circle {
+  background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(0,255,255,1) 50%, rgba(255,0,255,1) 75%, rgba(255,0,0,1) 100%);
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
