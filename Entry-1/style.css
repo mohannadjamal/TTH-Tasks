@@ -13,18 +13,18 @@
   left: 30px;
 }
 
-.box--green {
-  background-color: greenyellow;
-  /* Middle box */
-  z-index: 2;
+.box--blue {
+  background-color: blue;
+  /*Middle box */
+  z-index: 3;
   top: 30px;
   left: 30px;
 }
 
-.box--blue {
-  background-color: blue;
-  /*Foreground box */
-  z-index: 3;
+.box--green {
+  background-color: greenyellow;
+  /* Foreground box */
+  z-index: 2;
   top: 30px;
   left: 30px;
 }
