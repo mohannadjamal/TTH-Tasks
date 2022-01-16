@@ -1,0 +1,30 @@
+.container__box{
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.box--red {
+  background-color: red;
+  /* Background box */
+  z-index: 1;
+  top: 30px;
+  left: 30px;
+}
+
+.box--green {
+  background-color: greenyellow;
+  /* Middle box */
+  z-index: 2;
+  top: 30px;
+  left: 30px;
+}
+
+.box--blue {
+  background-color: blue;
+  /*Foreground box */
+  z-index: 3;
+  top: 30px;
+  left: 30px;
+}
