@@ -12,12 +12,12 @@
   margin: 50px;
 
   word-break: break-all;
-  
+
   font-size: 20px;
 }
 
 .container__title {
-  grid-column-start: span 3;
+  grid-column: span 3;
   grid-row: span 1;
 
   margin: 0;
@@ -50,4 +50,25 @@
 
 .container__p6 {
   grid-column: span 2;
+}
+
+@media screen and (max-width: 1370px) {
+  .container {
+    grid-template-columns: auto;
+    margin: 100px;
+    row-gap: 35px;
+  }
+
+  .container__title {
+    grid-column: 1;
+    font-size: 52px;
+  }
+
+  .container__p4 {
+    grid-column: span 1;
+  }
+
+  .container__p6 {
+    grid-column: span 1;
+  }
 }
