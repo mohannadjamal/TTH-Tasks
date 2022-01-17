@@ -115,6 +115,7 @@ body {
 .footer__post .info, .footer__fav .info, .footer__msg .info {
   display: flex;
   flex-direction: column;
+  text-align: center;
   margin-left: 5px;
   margin-top: 5px;
 }
