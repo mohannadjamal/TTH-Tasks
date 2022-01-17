@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="title">
+      Application For Permission To Date My Daughter
+    </h1>
+    <span class="note">
+      <b>Note: </b> Form is to be completed at least 21 days prior to date.
+    </span>
+    <form class="form" action="" method="post">
+      <fieldset class="form__personal">
+        <legend>Personal Details</legend>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter name here">
+        </div>
+        <div>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" placeholder="Enter address here">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter email here">
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0][5][0-9][0-9]{7}" placeholder="Enter 10 digit number">
+        </div>
+        <div>
+          <label for="iq">IQ:</label>
+          <input type="number" id="iq" name="iq" placeholder="Enter IQ here">
+        </div>
+        <div>
+          <span>Gender: </span>
+          <div>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div>
+          <label for="date">Date of Proposed Outing:</label>
+          <input type="date" id="date" name="date" placeholder="mm/dd/yyy">
+        </div>
+      </fieldset>
+      <fieldset>
+        <span>Check All That Apply</span>
+        <div>
+          <input type="checkbox" id="tattoos" name="features">
+          <label for="tattoos">I have tattoos abd/or piercings</label>
+        </div>
+        <div>
+          <input type="checkbox" id="age" name="features">
+          <label for="age">I am more than 2 years older than your daughter</label>
+        </div>
+        <div>
+          <input type="checkbox" id="vehicle" name="features">
+          <label for="vehicle">I own a panel van or V8 ute</label>
+        </div>
+        <div>
+          <input type="checkbox" id="work" name="features" checked>
+          <label for="work">I work full-time</label>
+        </div>
+        <div>
+          <input type="checkbox" id="parents" name="features" checked>
+          <label for="parents">My parents are rich</label>
+        </div>
+        <div>
+          <input type="checkbox" id="location" name="features" checked>
+          <label for="location">The date is at a well lit public location</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="politics">Political Persuasion:</label>
+        <select id="politics" name="politics">
+          <option value="left-wing">Left Wing</option>
+          <option value="center">Center</option>
+          <option value="right-wing">Right Wing</option>
+        </select>
+        <label for="education">Education Level Completed:</label>
+        <select id="education" name="education">
+          <option value="university">University</option>
+          <option value="highschool">Highschool</option>
+          <option value="middleschool">Middleschool</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Essay Section</legend>
+        <div>
+          <label for="why-area">In 50 words or more explain why you want to date my daughter</label>
+        </div>
+        <div>
+          <textarea id="why-area" name="why-area" rows="4" cols="50">Enter Text Here</textarea>
+        </div>
+        <div>
+          <label for="contacts">Please upload contact details for 2 references</label>
+        </div>
+        <div>
+          <textarea id="contacts" name="contacts" rows="4" cols="50">Enter Text Here</textarea>
+        </div>
+        <div>
+          <label for="files">Upload Police Clearance Certificate, Bank Statement and Medical Certtificates here:</label>
+          <label for="files" class="btn">
+            Attach Files
+          </label>
+          <input type="file" multiple id="files" accept="image/*,.pdf,.doc,.docx">
+        </div>
+      </fieldset>
+      <div class="submit">
+        <input type="submit" value="Send Your Application" class="btn">
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

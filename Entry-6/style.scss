@@ -1,0 +1,56 @@
+$yellow: #fcfad3;
+$gray: #dcdcdc;
+
+* {
+  font-family:  monospace;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+
+  background-color: $yellow;
+
+}
+
+.container {
+  position: relative;
+  grid-column: 2 / 3;
+  background-color: #fff;
+  border: 1px solid $gray;
+  border-radius: 15px;
+  padding: 30px;
+
+  .title {
+    text-align: center;
+  }
+
+  fieldset {
+    margin: 10px;
+  }
+
+  div {
+    margin: 10px 0;
+  }
+
+  .btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 3px;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+  .submit {
+    position: relative;
+    input[type="submit"] {
+      margin-top: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

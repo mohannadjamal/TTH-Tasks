@@ -1,0 +1,49 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #fcfad3;
+}
+
+.container {
+  position: relative;
+  grid-column: 2/3;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 15px;
+  padding: 30px;
+}
+.container .title {
+  text-align: center;
+}
+.container fieldset {
+  margin: 10px;
+}
+.container div {
+  margin: 10px 0;
+}
+.container .btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 3px;
+}
+.container input[type=file] {
+  display: none;
+}
+.container .submit {
+  position: relative;
+}
+.container .submit input[type=submit] {
+  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=style.css.map */
