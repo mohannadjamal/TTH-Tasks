@@ -20,6 +20,10 @@ body {
 .container .title {
   text-align: center;
 }
+.container legend {
+  font-size: 17px;
+  font-weight: 700;
+}
 .container fieldset {
   margin: 10px;
 }
