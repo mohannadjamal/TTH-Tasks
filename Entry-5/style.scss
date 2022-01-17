@@ -1,4 +1,5 @@
 $blue: #4dabf7;
+$blue-hover: #339af0;
 $dark-blue: #20364e;
 $gray: #adb5bd;
 $light-gray: #f8f9fa;
@@ -102,12 +103,20 @@ body {
       color: #fff;
       border: none;
       border-radius: 5px;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.7);
 
       width: 140px;
       height: 50px;
 
       font-size: 22px;
+    }
+    .btn:hover {
+      background-color: $blue-hover;
+    }
+    .btn:active {
+      background-color: $blue-hover;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
+      transform: translateY(4px);
     }
   }
 
