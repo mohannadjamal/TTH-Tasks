@@ -3,13 +3,56 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <div class="header"></div>
-    <div class="body"></div>
-    <div class="footer"></div>
+  <div class="card">
+    <span class="card__location">
+      <ion-icon name="navigate-circle-outline"></ion-icon> &nbsp; New York City, NY
+    </span>
+    <span class="card__verified">
+      <div class="card__verified--circle">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </div>
+    </span>
+    <div class="card__picture">
+      <img src="margot.jpg" alt="Margot Robbie">
+    </div>
+    <span class="card__name">Margot Robbie</span>
+    <span class="card__description">Margot Robie was born in Dalby, Queensland, Australia and raised on the Gold
+      Coast.</span>
+    <div class="card__button">
+      <button class="btn">Follow</button>
+    </div>
+    <div class="card__footer footer">
+      <div class="footer__post">
+        <ion-icon name="image-outline"></ion-icon>
+        <div class="info">
+          <span class="title">Posts</span>
+          <span class="num">635</span>
+        </div>
+      </div>
+      <div class="footer__fav">
+        <ion-icon name="heart-outline"></ion-icon>
+        <div class="info">
+          <span class="title">Favorites</span>
+          <span class="num">3,472</span>
+        </div>
+      </div>
+      <div class="footer__msg">
+        <ion-icon name="paper-plane-outline"></ion-icon>
+        <div class="info">
+          <span class="title">Messages</span>
+          <span class="num">1,293</span>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 

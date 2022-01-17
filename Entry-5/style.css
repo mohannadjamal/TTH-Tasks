@@ -1,0 +1,123 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  margin: 30px 50px;
+  padding: 0;
+  width: 430px;
+  height: 550px;
+  border: 1px solid #adb5bd;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 10% 40% 10% 10% 15% 15%;
+  overflow: hidden;
+}
+.card__location {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #868e96;
+}
+.card__verified {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__verified--circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #4dabf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+}
+.card__picture {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.card__picture img {
+  width: 180px;
+  height: 180px;
+  border: 5px solid #f8f9fa;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.card__name {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.card__description {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  text-align: center;
+}
+.card__button {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__button .btn {
+  background-color: #4dabf7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 140px;
+  height: 50px;
+  font-size: 22px;
+}
+.card__footer {
+  grid-column: 1/4;
+  grid-row: 6/7;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  background-color: #20364e;
+  color: #ac7d73;
+  font-size: 12px;
+}
+.footer__post, .footer__fav, .footer__msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__post .info, .footer__fav .info, .footer__msg .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.footer__fav {
+  border-left: 1px solid rgba(172, 125, 115, 0.3);
+  border-right: 1px solid rgba(172, 125, 115, 0.3);
+}
+.footer ion-icon {
+  font-size: 30px;
+}
+.footer .num {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
